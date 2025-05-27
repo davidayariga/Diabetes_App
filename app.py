@@ -54,8 +54,6 @@ input_dict = {
     'Weight Gain During Pregnancy': 10.0,
     'Ethnicity': 'A',
     'Socioeconomic Factors': 'Mid',
-    # These entries below will overwrite or add to the cleaned versions above
-    'Blood Glucose Levels': 300,
     'BMI': 50,
 }
 input_df = pd.DataFrame([input_dict])
