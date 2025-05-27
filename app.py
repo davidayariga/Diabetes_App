@@ -35,9 +35,24 @@ Weight_Gain_During_Pregnancy = form.slider('Weight Gain During Pregnancy', min_v
     
 predict_button = form.form_submit_button('Predict')
 
-input_dict = {'BMI' : BMI, 'Blood_Glucose_Levels' : Blood_Glucose_Levels,
-              'Waist_Circumference' : Waist_Circumference, 'Cholesterol_Levels' : Cholesterol_Levels, 
-              'Insulin_Levels': Insulin_Levels, 'Weight_Gain_During_Pregnancy': Weight_Gain_During_Pregnancy}
+input_dict = {'Genetic Markers': 0.5,
+    'Family History': 1,
+    'Insulin Levels': 150.0,
+    'Blood \nGlucose Levels': 120.0, 
+    'Glucose Tolerance Test': 140.0,
+    'Waist Circumference': 90.0,
+    'Physical \nActivity': 3.0,     
+    'Dietary Habits': 'Good',
+    'Smoking Status': 'No',
+    'Alcohol Consumption': 'Low',
+    'Blood \nPressure': 120.0,       
+    'Cholesterol Levels': 200.0,
+    'Liver Function Tests': 50.0,
+    'Previous Gestational \nDiabetes': 0, 
+    'Pregnancy History': 1,
+    'Weight Gain During Pregnancy': 10.0,
+    'Ethnicity': 'A',
+    'Socioeconomic Factors': 'Mid'}
             
 input_df = pd.DataFrame([input_dict])
 
