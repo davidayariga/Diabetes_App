@@ -52,7 +52,9 @@ input_dict = {'Genetic Markers': 0.5,
     'Pregnancy History': 1,
     'Weight Gain During Pregnancy': 10.0,
     'Ethnicity': 'A',
-    'Socioeconomic Factors': 'Mid'}
+    'Socioeconomic Factors': 'Mid',
+    'Blood Glucose Levels': 300,
+    'BMI': 50, 'Physical Activity': 'Low', 'Blood Pressure': 'Low', 'Previous Gestational Diabetes':'No'}
             
 input_df = pd.DataFrame([input_dict])
 
