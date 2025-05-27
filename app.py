@@ -35,27 +35,32 @@ Weight_Gain_During_Pregnancy = form.slider('Weight Gain During Pregnancy', min_v
     
 predict_button = form.form_submit_button('Predict')
 
-input_dict = {'Genetic Markers': 0.5,
+input_dict = {
+    'Genetic Markers': 0.5,
     'Family History': 1,
     'Insulin Levels': 150.0,
-    'Blood \nGlucose Levels': 120.0, 
+    'Blood \nGlucose Levels': 120.0,  # This will be overridden or cleaned
     'Glucose Tolerance Test': 140.0,
     'Waist Circumference': 90.0,
-    'Physical \nActivity': 3.0,     
+    'Physical \nActivity': 3.0,      # This will be overridden or cleaned
     'Dietary Habits': 'Good',
     'Smoking Status': 'No',
     'Alcohol Consumption': 'Low',
-    'Blood \nPressure': 120.0,       
+    'Blood \nPressure': 120.0,       # This will be overridden or cleaned
     'Cholesterol Levels': 200.0,
     'Liver Function Tests': 50.0,
-    'Previous Gestational \nDiabetes': 0, 
+    'Previous Gestational \nDiabetes': 0, # This will be overridden or cleaned
     'Pregnancy History': 1,
     'Weight Gain During Pregnancy': 10.0,
     'Ethnicity': 'A',
     'Socioeconomic Factors': 'Mid',
+    # These entries below will overwrite or add to the cleaned versions above
     'Blood Glucose Levels': 300,
-    'BMI': 50, 'Physical Activity': 'Low', 'Blood Pressure': 'Low', 'Previous Gestational Diabetes':'No'}
-            
+    'BMI': 50,
+    'Physical Activity': 'Low',
+    'Blood Pressure': 'Low',
+    'Previous Gestational Diabetes':'No'
+}
 input_df = pd.DataFrame([input_dict])
 
 if predict_button:
