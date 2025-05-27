@@ -22,7 +22,7 @@ st.markdown("Choose the values for each attribute of the Diabetes Type that you\
 form = st.form("Causality Feature")
 BMI = form.slider('BMI', min_value=0.0, max_value=50.0, 
                            value=0.0, step = 0.1, format = '%f')
-Blood_Glucose_Levels = form.slider('Blood_Glucose_Levels', min_value=0.0, max_value=300.0,
+Blood_Glucose_Levels = form.slider('Blood Glucose Levels', min_value=0.0, max_value=300.0,
                            value=0.0, step = 0.1, format = '%f')
 Waist_Circumference = form.slider('Waist Circumference', min_value=0.0, max_value=60.0,
                            value=0.0, step = 0.1, format = '%f')
@@ -57,9 +57,6 @@ input_dict = {
     # These entries below will overwrite or add to the cleaned versions above
     'Blood Glucose Levels': 300,
     'BMI': 50,
-    'Physical Activity': 'Low',
-    'Blood Pressure': 'Low',
-    'Previous Gestational Diabetes':'No'
 }
 input_df = pd.DataFrame([input_dict])
 
