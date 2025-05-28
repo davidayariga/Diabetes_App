@@ -21,17 +21,17 @@ st.markdown("Choose the values for each attribute of the Diabetes Type that you\
 
 form = st.form("Causality Feature")
 BMI = form.slider('BMI', min_value=0.0, max_value=50.0, 
-                           value=0.0, step = 0.1, format = '%f')
+                           value=0.0, step = 1, format = '%f')
 Blood_Glucose_Levels = form.slider('Blood Glucose Levels', min_value=0.0, max_value=300.0,
-                           value=0.0, step = 0.1, format = '%f')
+                           value=0.0, step = 1, format = '%f')
 Waist_Circumference = form.slider('Waist Circumference', min_value=0.0, max_value=60.0,
                            value=0.0, step = 0.1, format = '%f')
 Cholesterol_Levels = form.slider('Cholesterol Levels', min_value=0.0, max_value=300.0,
-                           value=0.0, step = 0.1, format = '%f')
+                           value=0.0, step = 1, format = '%f')
 Insulin_Levels = form.slider('Insulin Levels', min_value=0.0, max_value=60.0,
-                           value=0.0, step = 0.1, format = '%f')
+                           value=0.0, step = 1, format = '%f')
 Weight_Gain_During_Pregnancy = form.slider('Weight Gain During Pregnancy', min_value=0.0, max_value=60.0,
-                           value=0.0, step = 0.1, format = '%f')
+                           value=0.0, step = 1, format = '%f')
     
 predict_button = form.form_submit_button('Predict')
 
