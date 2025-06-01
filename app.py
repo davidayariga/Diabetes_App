@@ -4,7 +4,7 @@ from pycaret.classification import load_model, predict_model
 
 st.set_page_config(page_title="Diabetes Prediction App")
 
-@st.st.cache_data(allow_output_mutation=True)
+@st.cache_data(allow_output_mutation=True)
 def get_model():
     return load_model('classification_model')
 
