@@ -15,7 +15,7 @@ def predict(model, df):
 model = get_model()
 
 
-st.title("Diabtes Classification App")
+st.title("Diabtes Prediction App")
 st.markdown("Choose the values for each attribute of the Diabetes Type that you\
         want to Predict.")
 
