@@ -69,8 +69,8 @@ input_df = pd.DataFrame([input_dict])
 
 if predict_button:
     # Print the DataFrame being passed to the model for debugging
-    st.write("DataFrame being sent to prediction:")
-    st.dataframe(input_df) # This will show you the exact values and column names
+    #st.write("DataFrame being sent to prediction:")
+    #st.dataframe(input_df) # This will show you the exact values and column names
 
     try:
         out = predict(model, input_df)
