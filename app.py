@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 from pycaret.classification import load_model, predict_model
 
-st.set_page_config(page_title="Diabetes Classification App")
+st.set_page_config(page_title="Diabetes Prediction App")
 
 @st.cache(allow_output_mutation=True)
 def get_model():
