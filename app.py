@@ -27,7 +27,6 @@ with st.form("Causality Feature"): # Use 'with' statement for the form
     Weight_Gain_During_Pregnancy = st.slider('Weight Gain During Pregnancy', min_value=0.0, max_value=60.0, value=10.0, step = 0.1, format = '%f')
     Glucose_Tolerance_Test = st.slider('Glucose Tolerance Test', min_value=0.0, max_value=300.0, value=140.0, step=0.1)
     Physical_Activity = st.slider('Physical Activity', min_value=0.0, max_value=10.0, value=3.0, step=0.1) # Assuming a numeric scale   
-    Genetic_Markers = st.number_input('Genetic Markers', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
     Blood_Pressure = st.slider('Blood Pressure', min_value=0.0, max_value=200.0, value=120.0, step=0.1)
     Liver_Function_Tests = st.slider('Liver Function Tests', min_value=0.0, max_value=100.0, value=50.0, step=0.1)
     
@@ -39,7 +38,7 @@ with st.form("Causality Feature"): # Use 'with' statement for the form
     Ethnicity = st.selectbox('Ethnicity', ['A', 'B', 'C', 'D']) # Replace with actual ethnicities
     Socioeconomic_Factors = st.selectbox('Socioeconomic Factors', ['Low', 'Mid', 'High'])
     Family_History = st.selectbox('Family History', [0, 1], index=1, format_func=lambda x: "Yes" if x == 1 else "No") # Example: 0 for No, 1 for Yes
-
+    Genetic_Markers = st.number_input('Genetic Markers', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
 
     predict_button = st.form_submit_button('Predict')
 
