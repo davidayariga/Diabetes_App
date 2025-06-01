@@ -39,17 +39,17 @@ input_dict = {
     'Genetic Markers': 0.5,
     'Family History': 1,
     'Insulin Levels': 150.0,
-    'Blood Glucose Levels': 120.0,  # This will be overridden or cleaned
+    'Blood Glucose Levels': 120.0,  
     'Glucose Tolerance Test': 140.0,
     'Waist Circumference': 90.0,
-    'Physical Activity': 3.0,      # This will be overridden or cleaned
+    'Physical Activity': 3.0,      
     'Dietary Habits': 'Good',
     'Smoking Status': 'No',
     'Alcohol Consumption': 'Low',
-    'Blood Pressure': 120.0,       # This will be overridden or cleaned
+    'Blood Pressure': 120.0,       
     'Cholesterol Levels': 200.0,
     'Liver Function Tests': 50.0,
-    'Previous Gestational Diabetes': 0, # This will be overridden or cleaned
+    'Previous Gestational Diabetes': 0, 
     'Pregnancy History': 1,
     'Weight Gain During Pregnancy': 10.0,
     'Ethnicity': 'A',
