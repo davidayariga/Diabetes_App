@@ -17,7 +17,7 @@ model = get_model()
 
 st.title("Diabtes Classification App")
 st.markdown("Choose the values for each attribute of the Diabetes Type that you\
-        want to be classified.")
+        want to Predict.")
 
 form = st.form("Causality Feature")
 BMI = form.slider('BMI', min_value=0.0, max_value=50.0, 
